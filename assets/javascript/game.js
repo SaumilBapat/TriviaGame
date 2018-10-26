@@ -48,6 +48,14 @@ function startGame() {
   renderQuestions();
 }
 
+function restart() {
+  currentQuestion = 0;
+  wrongAnswers = 0;
+  correctAnswers = 0;
+  unanswered = 0;
+  startGame();
+}
+
 
 function renderQuestions() {
   timer.resetTimer();
@@ -104,4 +112,7 @@ function displayResults() {
   $("#Questions").append(wrongAnswersDiv);
   var unansweredDiv = $("<div>").html("<div class='userMessage'>Unanswered Questions: " + unanswered + "</div>");
   $("#Questions").append(unansweredDiv);
+  var restartButton = $("<button>").html("Try Again?");
+  restartButton.on('click', restart);
+  $("#Questions").append(restartButton);
 }
