@@ -4,4 +4,4 @@ PLAY: https://saumilbapat.github.io/TriviaGame/
 
 > Tips
 
-- Click the answer
+Updated Portfolio: https://saumilbapat.github.io/Responsive-Portfolio/
